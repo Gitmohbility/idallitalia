@@ -1,0 +1,161 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# Composer
+composer.lock
+composer.phar
+
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# PHP
+*.log
+*.log.*
+*.log.*.gz
+
+# Database
+*.sql
+*.sql.gz
+*.sql.bz2
+
+# Environment
+.env
+.env.*
+.env.*.local
+
+# Cache
+var/cache/
+var/logs/
+var/sessions/
+
+# Build
+build/
+dist/
+
+# PrestaShop specific
+config/parameters.php
+config/parameters.php~
+config/parameters.php.dist
+config/parameters.yml
+config/parameters.yml~
+config/parameters.yml.dist
+
+# Images
+*.orig
+*.bak
+*.backup
+
+# Backup files
+*~
+*.bak
+*.backup
+
+# Logs
+*.log
+*.log.*
+*.log.*.gz
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# IDE specific
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Editor files
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+.gitattributes
+.git-blame-ignore-revs
+
+# PHPStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/private/
+build/
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# Other IDEs
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.idea
+*.iml
+*.ipr
+*.iws
+
+# Database
+*.sql
+*.sql.gz
+*.sql.bz2
+
+# Environment
+.env
+.env.*
+.env.*.local
+
+# Cache
+var/cache/
+var/logs/
+var/sessions/
+
+# Build
+build/
+dist/
+
+# PrestaShop specific
+config/parameters.php
+config/parameters.php~
+config/parameters.php.dist
+config/parameters.yml
+config/parameters.yml~
+config/parameters.yml.dist
+
+# Images
+*.orig
+*.bak
+*.backup
