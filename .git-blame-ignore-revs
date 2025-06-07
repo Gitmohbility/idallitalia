@@ -2,3 +2,41 @@
 ^Merge branch.*
 ^Merge pull request.*
 ^Merge remote-tracking branch.*
+
+# Ignore rebase commits
+^Rebasing.*
+^Automatic merge.*
+^Updating.*
+
+# Ignore hotfix commits
+^Hotfix.*
+^Fix.*
+
+# Ignore documentation commits
+^docs.*
+^Update README.*
+
+# Ignore style commits
+^style.*
+^format.*
+^refactor.*
+
+# Ignore dependency updates
+^Update dependencies.*
+^Bump.*
+
+# Ignore configuration commits
+^Update config.*
+^Update settings.*
+
+# Ignore git hooks commits
+^Add git hooks.*
+^Update git hooks.*
+
+# Ignore whitespace commits
+^Whitespace.*
+^Remove whitespace.*
+
+# Ignore generated files
+^Update generated.*
+^Regenerate.*
