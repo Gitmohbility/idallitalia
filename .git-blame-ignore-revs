@@ -1,0 +1,4 @@
+# Ignore merge commits
+^Merge branch.*
+^Merge pull request.*
+^Merge remote-tracking branch.*

@@ -1,0 +1,25 @@
+[core]
+    autocrlf = input
+    safecrlf = warn
+    ignorecase = true
+    excludesfile = .gitignore
+
+[merge]
+    tool = vscode
+
+[diff]
+    tool = vscode
+
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    last = log -1 HEAD
+    graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    undo = reset --soft HEAD~1
+    amend = commit --amend --no-edit
+    unstage = reset -q HEAD --
+
+[format]
+    pretty = format:%C(yellow)%h%Creset %s %Cgreen(%cr)%Creset %C(bold blue)<%an>%Creset
