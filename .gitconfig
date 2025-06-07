@@ -67,43 +67,22 @@
     revert = commit -m "revert: "
     ci = commit -m "ci: "
     perf = commit -m "perf: "
-    co-apply = checkout --patch
-    diffstat = diff --stat
-    unmerged = diff --name-only --diff-filter=U
-    staged = diff --cached
-    unstage = reset HEAD --
-    last = log -1 HEAD
-    amend = commit --amend
-    amend-force = commit --amend --no-edit
-    uncommit = reset --soft HEAD~1
-    unstage = reset -q HEAD --
-    wip = commit -m "WIP: Work in progress"
-    uncommit = reset --soft HEAD~1
-    l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
-    ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
-    feat = commit -m "feat: "
-    fix = commit -m "fix: "
-    docs = commit -m "docs: "
-    style = commit -m "style: "
-    refactor = commit -m "refactor: "
-    test = commit -m "test: "
-    chore = commit -m "chore: "
-    revert = commit -m "revert: "
-    ci = commit -m "ci: "
-    perf = commit -m "perf: "
 
 [format]
     pretty = format:%C(yellow)%h%Creset %s %Cgreen(%cr)%Creset %C(bold blue)<%an>%Creset
     mailmap = true
     subjectprefix = "git"
+    logDate = relative
 
 [push]
     default = simple
     followTags = true
+    autoSetupRemote = true
 
 [branch]
     autosetuprebase = always
     autosetupmerge = true
+    color = auto
 
 [init]
     defaultBranch = main
@@ -114,39 +93,50 @@
     addEmbeddedRepo = warn
     addIgnoredFile = warn
     addOutsideRepository = warn
+    pushNonFastForward = warn
+    statusUoption = auto
 
 [credential]
     helper = osxkeychain
+    useHttpPath = true
 
 [http]
     postBuffer = 524288000
     sslVerify = true
     proxy = 
+    maxRequests = 16
 
 [gc]
     auto = 256
     pruneexpire = "2 weeks ago"
     agressive = true
+    packrefs = true
 
 [help]
     autocorrect = 1
+    format = html
 
 [user]
     name = Gitmohbility
     email = mohbility.pro@gmail.com
+    signingkey = 
 
 [log]
     decorate = auto
     abbrevCommit = true
     graph = true
+    fullHistory = true
 
 [pack]
     deltaCacheSize = 128m
     threads = 4
+    window = 100
+    depth = 50
 
 [rebase]
     autosquash = true
     autostash = true
+    keepEmpty = true
 
 [sendemail]
     smtpencryption = tls
@@ -154,19 +144,20 @@
     smtpuser = mohbility.pro@gmail.com
     smtpserverport = 587
     smtpauthentication = login
+    from = mohbility.pro@gmail.com
 
 [status]
     showUntrackedFiles = all
     showStash = true
+    showBranch = auto
 
 [tag]
     forceSignAnnotated = true
+    sort = -v:refname
 
 [gc]
     pruneexpire = "2 weeks ago"
     agressive = true
-
-[credential]
     helper = osxkeychain
 
 [http]
