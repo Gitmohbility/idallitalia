@@ -1,0 +1,28 @@
+# Code Owners
+
+# Core files
+*.php @Gitmohbility
+*.js @Gitmohbility
+*.css @Gitmohbility
+*.html @Gitmohbility
+
+# Frontend
+themes/* @Gitmohbility
+js/* @Gitmohbility
+img/* @Gitmohbility
+
+# Backend
+admin/* @Gitmohbility
+controllers/* @Gitmohbility
+
+# Modules
+modules/* @Gitmohbility
+
+# Configuration
+config/* @Gitmohbility
+
+# Documentation
+*.md @Gitmohbility
+
+# All other files
+* @Gitmohbility
