@@ -1,0 +1,54 @@
+services:
+  _defaults:
+    public: true
+
+  ##############
+  # Your Module
+
+  supdropshipping.module:
+    class: supdropshipping
+    factory: ['Module', 'getInstanceByName']
+    arguments:
+      - '<supdropshipping>'
+
+  supdropshipping.context:
+    class: Context
+    factory: ['Context', 'getContext']
+
+  #####################
+  # PrestaShop Account
+
+  supdropshipping.ps_accounts_installer:
+    class: 'PrestaShop\PsAccountsInstaller\Installer\Installer'
+    arguments:
+      - '5.0'
+
+  supdropshipping.ps_accounts_facade:
+    class: 'PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts'
+    arguments:
+      - '@supdropshipping.ps_accounts_installer'
+
+  #####################
+  # PrestaShop Billing
+
+  supdropshipping.ps_billings_context_wrapper:
+    class: 'PrestaShopCorp\Billing\Wrappers\BillingContextWrapper'
+    arguments:
+      - '@supdropshipping.ps_accounts_facade'
+      - '@supdropshipping.context'
+      - false # if true, enables the sandbox mode, if false or empty, disables it
+
+  supdropshipping.ps_billings_facade:
+    class: 'PrestaShopCorp\Billing\Presenter\BillingPresenter'
+    public: true
+    arguments:
+      - '@supdropshipping.ps_billings_context_wrapper'
+      - '@supdropshipping.module'
+
+  # Remove this if you do not need BillingService
+  supdropshipping.ps_billings_service:
+    class: 'PrestaShopCorp\Billing\Services\BillingService'
+    public: true
+    arguments:
+      - '@supdropshipping.ps_billings_context_wrapper'
+      - '@supdropshipping.module'

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>supdropshipping</name>
+    <displayName><![CDATA[Sup Dropshipping]]></displayName>
+    <version><![CDATA[1.1.2]]></version>
+    <description>
+        <![CDATA[Sup Dropshipping is dedicated to optimizing your margins by getting access to direct factories and wholesale suppliers. We help you lower your purchasing cost. Sup offers professional services to help you build and grow your E-commerce brand. From customizing your products to improve unboxing experience of your customers, we can handle everything. Sup automatically syncs your Shopify orders. You just need to confirm, and everything else will be handled by Sup team.]]></description>
+    <author><![CDATA[Sup Dropshipping]]></author>
+    <tab><![CDATA[content_management]]></tab>
+    <confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

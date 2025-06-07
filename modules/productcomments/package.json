@@ -1,0 +1,28 @@
+{
+  "name": "productcomments",
+  "description": "Allows users to post reviews and rate products on specific criteria.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "echo \"Error: no install specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrestaShop/productcomments.git"
+  },
+  "keywords": [
+    "product",
+    "comments",
+    "reviews",
+    "rate",
+    "grade"
+  ],
+  "author": "PrestaShop",
+  "license": "AFL-3.0",
+  "bugs": {
+    "url": "https://github.com/PrestaShop/productcomments/issues"
+  },
+  "homepage": "https://github.com/PrestaShop/productcomments#readme",
+  "dependencies": {
+  }
+}

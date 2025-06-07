@@ -1,0 +1,53 @@
+# PrestaShop
+config/parameters.php
+config/settings.inc.php
+config/defines.inc.php
+config/local.php
+
+# Cache
+var/cache/
+var/logs/
+var/sessions/
+
+# Uploads
+upload/
+
+# Vendor
+vendor/
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build
+build/
+dist/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PHP
+phpunit.xml
+codeception.yml
+
+# Composer
+composer.lock
+
+# PrestaShop specific
+admin/autoupgrade/backup/
+admin/autoupgrade/logs/
+admin/autoupgrade/upgrade_data/
+admin/autoupgrade/upgrade_log.txt
+admin/autoupgrade/upgrade_log_

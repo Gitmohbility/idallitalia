@@ -1,0 +1,33 @@
+div#mymodule_block_home p {
+    font-size: 150%;
+    font-style: italic;
+}
+
+.SupdropShippingButton .process-icon-save {
+    display: none !important;
+}
+
+.SupdropShippingButton {
+    color: #fff !important;
+    border-radius: 36px !important;
+    background: #616ad4 !important;
+    padding: 10px 20px !important;
+    border: none !important;
+}
+
+.supdropshipping .panel-footer {
+    text-align: center;
+}
+
+.supdropshipping .panel-heading {
+    font-size: 20px;
+}
+
+#module_form {
+    height: 230px;
+}
+
+#fieldset_0 {
+    display: none;
+    height: 130px;
+}

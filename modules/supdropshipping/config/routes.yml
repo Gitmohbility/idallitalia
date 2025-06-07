@@ -1,0 +1,5 @@
+your_route_name:
+  path: demo
+  methods: [ GET ]
+  defaults:
+    _controller: 'supdropshipping\Controller\DemoController::demoAction'
